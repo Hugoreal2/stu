@@ -1,0 +1,80 @@
+# Go build and test files
+/bin/
+/obj/
+/vendor/
+/*.exe
+/*.out
+/*.test
+
+# Go Modules
+/go.sum
+/go.mod
+
+# Logs
+*.log
+
+# Build artifacts
+/dist/
+/build/
+
+# Executables
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Coverage files
+*.cov
+*.coverage
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# GoLand/IntelliJ IDEA specific
+.idea/
+*.iml
+workspace.xml
+
+# VSCode specific
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Sublime Text specific
+*.sublime-workspace
+*.sublime-project
+
+# Eclipse specific
+.project
+.classpath
+.settings/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+.idea_modules/
+
+# MacOS Finder
+.AppleDouble
+.LSOverride
+
+# Windows
+*.bat
+*.cmd
+
+# Backup files
+*.bak
+*.swp
+*.tmp
+
+# JetBrains IDE index files
+.idea/
+
+# Node.js dependencies (if used)
+node_modules/
