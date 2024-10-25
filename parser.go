@@ -25,7 +25,7 @@ func (v *VarNode) Render(ctx map[string]interface{}) string {
 	if value != nil {
 		return fmt.Sprintf("%v", value)
 	}
-	return ""
+	return "Value Not Defined"
 }
 
 type ForNode struct {
