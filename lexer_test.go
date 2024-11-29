@@ -19,9 +19,9 @@ func TestTokenize(t *testing.T) {
 		{
 			"{% for item in items %}{{ item }}{% endfor %}",
 			[]Token{
-				{Type: TOKEN_BLOCK, Value: "for item in items", Line: 1, Col: 1},
+				{Type: TOKEN_FOR, Value: "for item in items", Line: 1, Col: 1},
 				{Type: TOKEN_VARIABLE, Value: "item", Line: 1, Col: 19},
-				{Type: TOKEN_BLOCK, Value: "endfor", Line: 1, Col: 26},
+				{Type: TOKEN_END_FOR, Value: "endfor", Line: 1, Col: 26},
 				{Type: TOKEN_EOF, Value: "", Line: 1, Col: 33},
 			},
 		},
