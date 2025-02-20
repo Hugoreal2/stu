@@ -8,7 +8,6 @@
 
 # Go Modules
 /go.sum
-/go.mod
 
 # Logs
 *.log
