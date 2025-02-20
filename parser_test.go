@@ -37,8 +37,8 @@ func TestParseTemplate(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(test.template, func(t *testing.T) {
-			tokens := tokenize(test.template)
-			ast := parseTemplate(tokens)
+			tokens := Tokenize(test.template)
+			ast := ParseTemplate(tokens)
 			if len(ast) != len(test.expected) {
 				t.Fatalf("expected %d nodes, got %d", len(test.expected), len(ast))
 			}

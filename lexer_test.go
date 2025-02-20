@@ -61,7 +61,7 @@ func TestTokenize(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(test.template, func(t *testing.T) {
-			tokens := tokenize(test.template)
+			tokens := Tokenize(test.template)
 			for i, token := range tokens {
 				if token.Type != test.expected[i].Type || token.Value != test.expected[i].Value {
 					t.Errorf("expected %v, got %v", test.expected[i], token)

@@ -28,7 +28,7 @@ type Token struct {
 	Col   int       // Column number for error reporting
 }
 
-func tokenize(template string) []Token {
+func Tokenize(template string) []Token {
 	var tokens []Token
 	length := len(template)
 	line, col := 1, 1
@@ -110,7 +110,7 @@ func tokenize(template string) []Token {
 }
 
 // Parse function - takes tokens, returns nodes (AST)
-func parseTemplate(tokens []Token) []Node {
+func ParseTemplate(tokens []Token) []Node {
 	var nodes []Node
 	length := len(tokens)
 	i := 0
