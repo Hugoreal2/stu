@@ -52,7 +52,7 @@ func (f *ForNode) Render(ctx map[string]interface{}) string {
 	return result
 }
 
-func renderTemplate(ast []Node, context map[string]interface{}) string {
+func RenderTemplate(ast []Node, context map[string]interface{}) string {
 	var result string
 	for _, node := range ast {
 		result += node.Render(context)
